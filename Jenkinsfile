@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/favy12/java-maven-app.git'
+                git branch: 'main', url: 'https://github.com/favy12/java-maven-app.git'
             }
         }
         stage('Build with Maven') {
